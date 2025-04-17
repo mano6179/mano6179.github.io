@@ -172,13 +172,16 @@ nav {
 }
 
 .hero-text-content .title {
-    font-size: 1.4rem;
+    font-size: 1.25rem;
     margin-bottom: 1.5rem;
     opacity: 0;
     animation: fadeInUp 1s ease 0.2s forwards;
     color: rgba(255, 255, 255, 0.9);
     font-weight: 500;
     letter-spacing: 0.02em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .hero-text {
@@ -879,6 +882,12 @@ footer {
 
     .nav-links a {
         font-size: 1.2rem;
+    }
+
+    .hero-text-content .title {
+        font-size: 1rem;
+        white-space: normal;
+        line-height: 1.4;
     }
 }
 
